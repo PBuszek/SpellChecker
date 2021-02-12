@@ -1,4 +1,6 @@
-package main.java.com.codecool;
+package com.codecool;
+
+import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 
 public class SinglyLinkedList {
     private StringNode head;

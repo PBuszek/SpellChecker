@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -29,10 +29,10 @@ public class WordChecker {
      * @see WordList
      */
 
-    private WordList wordList;
+    private com.codecool.WordList wordList;
     final static char[] characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 
-    public WordChecker(WordList wordList) {
+    public WordChecker(com.codecool.WordList wordList) {
         this.wordList = wordList;
 
     }

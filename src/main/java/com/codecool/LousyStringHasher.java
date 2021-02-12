@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 /**
  * ICS 23 Summer 2004
  * Project #5: Lost for Words
@@ -9,7 +9,7 @@ package main.java.com.codecool;
  * hash("xela")).  Consider why this is such a poor strategy.
  */
 
-public class LousyStringHasher implements StringHasher {
+public class LousyStringHasher implements com.codecool.StringHasher {
     public int hash(String s) {
         int h = 0;
         for (int i = 0; i < s.length(); ++i) {

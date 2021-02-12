@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 
 /**
  * ICS 23 Summer 2004
@@ -8,7 +8,7 @@ package main.java.com.codecool;
  * the characters appear are both considered significant.
  */
 
-public class BetterStringHasher implements StringHasher {
+public class BetterStringHasher implements com.codecool.StringHasher {
     public int hash(String s) {
         int h = 0;
         for (int i = 0; i < s.length(); ++i) {

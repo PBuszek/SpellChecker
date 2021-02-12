@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 
 import java.io.OutputStream;
 

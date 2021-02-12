@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 
 /**
  * ICS 23 Summer 2004
@@ -9,7 +9,7 @@ package main.java.com.codecool;
  * list.
  */
 
-public class DegenerateStringHasher implements StringHasher {
+public class DegenerateStringHasher implements com.codecool.StringHasher {
     public int hash(String s) {
         return 0;
     }

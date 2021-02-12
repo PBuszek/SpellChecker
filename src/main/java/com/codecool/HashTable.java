@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 /**
  * ICS 23 Summer 2004
  * Project #5: Lost for Words
@@ -11,8 +11,8 @@ package main.java.com.codecool;
 public class HashTable {
 
     private final int tableSize;
-    private final SinglyLinkedList[] elements;
-    private final StringHasher stringHasher;
+    private final com.codecool.SinglyLinkedList[] elements;
+    private final com.codecool.StringHasher stringHasher;
 
 
     /**
@@ -24,10 +24,10 @@ public class HashTable {
      * @see StringHasher
      */
 
-    public HashTable(int tableSize, StringHasher stringHasher) {
+    public HashTable(int tableSize, com.codecool.StringHasher stringHasher) {
         this.tableSize = tableSize;
         this.stringHasher = stringHasher;
-        this.elements = new SinglyLinkedList[tableSize];
+        this.elements = new com.codecool.SinglyLinkedList[tableSize];
     }
 
 
@@ -40,7 +40,7 @@ public class HashTable {
     public void add(String s) {
         int position = getPositionByHash(s);
         if (elements[position] == null) {
-            elements[position] = new SinglyLinkedList();
+            elements[position] = new com.codecool.SinglyLinkedList();
         }
         elements[position].insert(s);
     }
@@ -73,7 +73,7 @@ public class HashTable {
      */
     public void remove(String s) {
         int position = getPositionByHash(s);
-        SinglyLinkedList list =  elements[position];
+        com.codecool.SinglyLinkedList list =  elements[position];
         if (list.search(s) > 0) {
             list.delete(list.search(s));
         }

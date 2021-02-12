@@ -1,4 +1,4 @@
-package main.java.com.codecool;
+package com.codecool;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -16,7 +16,7 @@ public class SpellCheck
         }
         final String s = array[array.length - 1];
         String s2 = "wordlist.txt";
-        StringHasher o = new LousyStringHasher();
+        com.codecool.StringHasher o = new LousyStringHasher();
         PrintStream out = System.out;
         boolean b = false;
         for (int i = 0; i < array.length - 1; ++i) {
